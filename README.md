@@ -72,6 +72,15 @@ bits that just lead to the skybox ingame
 Try overlaying it with a partially transparent version of another arena to see
 how the sizes compare
 
+### T8
+Arena size: 43×43 metres/yalms
+Arena coordinates: (-2.695, -105.33, -507)
+
+Towers are inactive (under the floor) for these images
+
+Trivia: The arena is located at quite unusual coordinates. Usually they're at
+nice round integers
+
 ## How to reproduce
  1. Export zone from the game via Godbert or similar
  2. Import zone *.obj files into Blender
