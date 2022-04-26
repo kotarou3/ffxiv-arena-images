@@ -63,6 +63,21 @@ floor get pulled out and are turned by Alexander. This is how they appear in the
 exported model of the arena, so to get an accurate non-enrage sequence arena they
 have to be manually retracted ~7.36m (distance guessed and unchecked with ingame)
 
+
+### DSU
+Arena radius: TBD
+
+These pictures were taken before the servers were up, so things might be wildly
+wrong. Because the "death wall" isn't stored in the models, I won't be able to
+make cropped images until later
+
+The arena seems to be massive compared to previous ultimates, with the full
+foreground arena (before being limited in size by a death wall) being 36m in
+radius
+
+The white middle section of the P2 arena is a completely different object than
+the rest of the arena, which could mean that it disappears for part of the fight
+
 ### T4
 Arena radius: 25m
 
