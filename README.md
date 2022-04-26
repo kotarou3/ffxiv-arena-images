@@ -4,7 +4,7 @@ Renders of various in-game arenas applicable to FFXIV ultimate raiders. Useful
 for creating pictures for guiding people's positions
 
 ## General
-Scale is 50 pixels = 1 metre/yalm
+Scale is 50 pixels = 1 metre = 1 yalm
 
 Some textures are wrong (mostly repeating floor textures), but floor markings
 should be correct. Effects and skybox are not included
@@ -20,7 +20,7 @@ they're outside the "death walls"
 
 ## Specific comments
 ### UCoB
-Arena radius: 22 metres/yalms
+Arena radius: 22m
 
 P1 (Twintania) and P2 (Nael) are probably useless due to the wrong textures issue
 
@@ -28,8 +28,8 @@ P3 and P4 (Bahamut) has transparent floors (which just reveals the skybox in-gam
 which I've just left as-is. Feel free to fill the background in yourself
 
 ### UWU
-Arena radius: 20 metres/yalms  
-P3 shrunken radius: 16 & 12 metres/yalms
+Arena radius: 20m  
+P3 shrunken radius: 16 & 12m
 
 P1 (Garuda), P2 (Ifrit), P4 (LB phase) are probably useless due to the wrong
 textures issue
@@ -41,7 +41,7 @@ P5 (Ultima) has wrong floor textures. But the lines on the floor should be
 correct, as well as the runes on the outside
 
 ### TEA
-Arena radius: 20 metres/yalms
+Arena radius: 20m
 
 The grey circle on the P1 (Living Liquid), P2 (Brute Justice), and P4 (Perfect
 Alexander) arenas is the "death circle" that normally glows purple ingame
@@ -64,7 +64,7 @@ exported model of the arena, so to get an accurate non-enrage sequence arena the
 have to be manually retracted ~7.36m (distance guessed and unchecked with ingame)
 
 ### T4
-Arena radius: 25 metres/yalms
+Arena radius: 25m
 
 This arena is a fair bit larger than other areans, and also contains transparent
 bits that just lead to the skybox ingame
@@ -73,13 +73,17 @@ Try overlaying it with a partially transparent version of another arena to see
 how the sizes compare
 
 ### T8
-Arena size: 43×43 metres/yalms
+Arena size: 43×43m
 Arena coordinates: (-2.695, -105.33, -507)
 
 Towers are inactive (under the floor) for these images
 
 Trivia: The arena is located at quite unusual coordinates. Usually they're at
 nice round integers
+
+Diametres:
+ - (Pre-) Ballistic Missile knockback circle: 16m
+ - Max melee: 13m
 
 ## How to reproduce
  1. Export zone from the game via Godbert or similar
