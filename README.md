@@ -72,8 +72,8 @@ The arena seems to be massive compared to previous ultimates, with the full
 foreground arena (before being limited in size by a death wall) being 36m in
 radius
 
-The P4 arena is missing the "paved stone" textures on the ground, but otherwise
-should be fine
+The arena phases are numbered by the order they appear in the fight, rather than
+corresponding exactly to fight phases (since arenas are reused in different phases)
 
 ### T4
 Arena radius: 25m
@@ -98,16 +98,37 @@ Diametres:
  - Max melee: 13m
 
 ## How to reproduce
- 1. Export zone from the game via Godbert or similar
- 2. Import zone *.obj files into Blender
- 3. Remove any objects (usually for special mechanics) that obscure the arena
- 4. Set camera position XYZ to be centred on top of the arena
- 5. Set camera rotation 0° on all 3 Euler angles
- 6. Set camera lens type to "Orthographic", with scale = 60
- 7. Adjust camera clipping appropriately for the scene
- 8. Set render engine to "Workbench", lighting to "Flat", colour to "Texture", film to "Transparent"
- 9. Set output resolution to 3000×3000 px
-10. Render and save
+### Exporting from the game and importing into Blender
+There's two tools I use to export the zones from the game:
+[Godbert](https://github.com/xivapi/SaintCoinach) or
+[ZoneFbx](https://github.com/lmcintyre/ZoneFbx).
+ZoneFbx tends to be more accurate (Godbert sometimes misses textures), but
+sometimes it's the other way around, so I recommend using both tools and
+comparing results
+
+#### Godbert
+1. Find the zone in the 3D > Territories tab and export the zone
+2. Import the various *.obj files into Blender, corresponding to which objects
+   you want to render (trial and error to find which ones)
+
+#### ZoneFbx
+1. Find the zone path in TerritoryType.exd via Godbert or similar (should look
+   something like `ffxiv/roc_r1/fld/r1fz/level/r1fz`)
+2. Export the zone from the game with the found path
+3. Import the zone .fbx file into Blender with scale = 100
+4. Hide any objects you don't want to render, such as unwanted phases. (Tip:
+   Shift+click on the eye and camera in the scene collection to hide all children)
+
+### Rendering in Blender
+1. Manually delete any unwanted objects (usually for special mechanics) that
+   obscure the arena
+2. Set camera position XYZ to be centred on top of the arena
+3. Set camera rotation 0° on all 3 Euler angles
+4. Set camera lens type to "Orthographic", with scale = 60
+5. Adjust camera clipping appropriately for the scene
+6. Set render engine to "Workbench", lighting to "Flat", colour to "Texture", film to "Transparent"
+7. Set output resolution to 3000×3000 px
+8. Render and save
 
 The exported model often contains lots of "duplicated" vertices, that make
 selecting entire objects difficult. Fortunately, Blender can automatically merge
