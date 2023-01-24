@@ -63,7 +63,6 @@ floor get pulled out and are turned by Alexander. This is how they appear in the
 exported model of the arena, so to get an accurate non-enrage sequence arena they
 have to be manually retracted ~7.36m (distance guessed and unchecked with ingame)
 
-
 ### DSU
 P1/3 arena size: 44×44m
 P2/4/5 arena radius: 21m
@@ -74,6 +73,20 @@ radius
 
 The arena phases are numbered by the order they appear in the fight, rather than
 corresponding exactly to fight phases (since arenas are reused in different phases)
+
+### TOP
+Arena radius: 20m
+
+The arena is very dull in these exports because most of the colour comes from
+effects, which are not rendered here
+
+These arenas were exported before people reached phase 2, so phase names are
+verbatim from the game files, and might not match up to actual phase order in-game.  
+Especially odd is the phase 2 export being just an outside ring - presumably
+it's not actually a real phase and just numbered so for developer convenience
+
+All arenas were exported with ZoneFbx, as Godbert would error out when trying to
+export
 
 ### T4
 Arena radius: 25m
