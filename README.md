@@ -88,6 +88,12 @@ it's not actually a real phase and just numbered so for developer convenience
 All arenas were exported with ZoneFbx, as Godbert would error out when trying to
 export
 
+### FRU
+Arena radius: 20m
+
+Temporary scuffed exports with half-broken textures. Phase numbers are verbatim
+from game files, so might not actually match with chronological phase order
+
 ### T4
 Arena radius: 25m
 
