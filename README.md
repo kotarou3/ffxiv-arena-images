@@ -91,8 +91,7 @@ export
 ### FRU
 Arena radius: 20m
 
-Temporary scuffed exports with half-broken textures. Phase numbers are verbatim
-from game files, so might not actually match with chronological phase order
+ZoneFbx export, but transparency seems broken so P4/P6 textures are a bit off
 
 ### T4
 Arena radius: 25m
@@ -120,7 +119,7 @@ Diametres:
 ### Exporting from the game and importing into Blender
 There's two tools I use to export the zones from the game:
 [Godbert](https://github.com/xivapi/SaintCoinach) or
-[ZoneFbx](https://github.com/lmcintyre/ZoneFbx).
+[ZoneFbx](https://github.com/OTCompa/ZoneFbx).
 ZoneFbx tends to be more accurate (Godbert sometimes misses textures), but
 sometimes it's the other way around, so I recommend using both tools and
 comparing results
@@ -132,9 +131,9 @@ comparing results
 
 #### ZoneFbx
 1. Find the zone path in TerritoryType.exd via Godbert or similar (should look
-   something like `ffxiv/roc_r1/fld/r1fz/level/r1fz`)
+   something like `ffxiv/roc_r1/fld/r1fz/level/r1fz`), or use ZoneFbx.GUI
 2. Export the zone from the game with the found path
-3. Import the zone .fbx file into Blender with scale = 100
+3. Import the zone .fbx file into Blender with scale = 1
 4. Hide any objects you don't want to render, such as unwanted phases. (Tip:
    Shift+click on the eye and camera in the scene collection to hide all children)
 
@@ -145,9 +144,12 @@ comparing results
 3. Set camera rotation 0° on all 3 Euler angles
 4. Set camera lens type to "Orthographic", with scale = 60
 5. Adjust camera clipping appropriately for the scene
-6. Set render engine to "Workbench", lighting to "Flat", colour to "Texture", film to "Transparent"
-7. Set output resolution to 3000×3000 px
-8. Render and save
+6. Set render engine to "EEVEE", film to "Transparent"
+7. Identify the arena's light source (or add your own)
+8. Set the light source to type = Area, power = 4MW, shape = disk, size = 1000m, shadow = off
+9. Set the light source rotation 0° on all 3 Euler angles
+10. Set output resolution to 3000×3000 px
+11. Render and save
 
 The exported model often contains lots of "duplicated" vertices, that make
 selecting entire objects difficult. Fortunately, Blender can automatically merge
