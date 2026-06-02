@@ -93,6 +93,11 @@ Arena radius: 20m
 
 ZoneFbx export, but transparency seems broken so P4/P6 textures are a bit off
 
+### UMAD
+Arena radius: 20m
+
+ZoneFbx export from before servers are up, so phase numbers are just placeholders
+
 ### T4
 Arena radius: 25m
 
@@ -145,7 +150,7 @@ comparing results
 4. Set camera lens type to "Orthographic", with scale = 60
 5. Adjust camera clipping appropriately for the scene
 6. Set render engine to "EEVEE", film to "Transparent"
-7. Identify the arena's light source (or add your own)
+7. Identify the arena's light source (or add your own) centred above the arena
 8. Set the light source to type = Area, power = 4MW, shape = disk, size = 1000m, shadow = off
 9. Set the light source rotation 0° on all 3 Euler angles
 10. Set output resolution to 3000×3000 px
